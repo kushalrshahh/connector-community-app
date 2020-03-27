@@ -30,7 +30,7 @@ export default function ButtonAppBar() {
             <MenuIcon></MenuIcon>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Connector Community App
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
