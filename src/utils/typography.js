@@ -8,7 +8,7 @@ const typography = new Typography(
         name: 'Open Sans',
         styles: [
           '400',
-          '600'
+          '700'
         ],
       },
       {
