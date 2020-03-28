@@ -13,6 +13,7 @@ module.exports = {
         resources: ['./src/styles/utilities/resources.scss']
       }
     },
+    `gatsby-plugin-react-svg`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
