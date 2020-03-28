@@ -1,10 +1,12 @@
 import React from "react"
-import ButtonAppBar from "../components/AppBar"
+import Layout from "../components/layout"
 
-export default () => (
-  <div>
-  <div>
-    <ButtonAppBar/>
-  </div>
-  </div>
+const IndexPage = () => (
+  <Layout>
+    <div className="content">
+      Index Page
+    </div>
+  </Layout>
 )
+
+export default IndexPage
