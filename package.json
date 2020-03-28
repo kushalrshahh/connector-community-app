@@ -32,7 +32,8 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "react-router-dom": "^5.1.2"
   },
   "repository": {
     "type": "git",
