@@ -1,0 +1,34 @@
+/*
+** Table of Contents
+** 1. General
+*/
+
+// 1. General
+header {
+  height: 60px;
+  position: relative;
+}
+.logo {
+  padding: 10px;
+  position: inline-block;
+  height: $header-height - 20px;
+
+  img {
+    height: 100%;
+  }
+
+  .site-name {
+    color: $heading-primary;
+    display: none;
+    left: 190px;
+    margin-bottom: 0;
+    min-width: 220px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    @include breakpoint('medium') {
+      display: block;
+    }
+  }
+}
