@@ -1,5 +1,5 @@
 import React from "react"
-import ButtonAppBar from "../components/AppBar"
+import ButtonAppBar from "../components/Header"
 
 export default () => (
   <div>
