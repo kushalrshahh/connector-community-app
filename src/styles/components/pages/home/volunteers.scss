@@ -1,0 +1,48 @@
+/*
+** Table of Contents
+** 1. General
+*/
+
+// 1. General
+.volunteers {
+  background-color: $grey-light;
+  padding: 40px 0;
+
+  .button {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .list-box { text-align: center; }
+
+  h2, ol { text-align: center; }
+  ol {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  @include breakpoint('medium') {
+    .content { max-width: 1200px; }
+    h2, li { text-align: left; }
+    ol {
+      max-width: none;
+      margin-bottom: 30px;
+    }
+    .list-box { text-align: left; }
+  }
+}
+
+// 2. Image Placeholder
+.image-spacer {
+  padding: 5%;
+}
+.image-placeholder {
+  background-color: hsla(0,0%,0%,0.3);
+  color: $white;
+  height: 100%;
+  line-height: 200px;
+  margin: 0 auto;
+  max-width: 240px;
+  min-height: 240px;
+  text-align: center;
+  width: 100%;
+}
