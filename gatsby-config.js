@@ -13,6 +13,8 @@ module.exports = {
         resources: ['./src/styles/utilities/resources.scss']
       }
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
