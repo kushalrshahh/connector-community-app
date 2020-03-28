@@ -3,7 +3,7 @@
  import { useStaticQuery, graphql } from "gatsby"
 
  //Components
- import Header from "./AppBar"
+ import Header from "./header"
  import Footer from "./footer"
 
  //Stylesheets
