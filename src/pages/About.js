@@ -1,9 +1,14 @@
-import React from "react";
+import React from "react"
 
-export default function About() {
-    return (
-      <div>
-          <h2>About page</h2>
+//Components
+import Layout from "../components/layout"
+
+export default function Profile() {
+  return (
+    <Layout pageClass="about-us">
+      <div className="content">
+        <p>About Us</p>
       </div>
-    );
+    </Layout>
+  )
 }
