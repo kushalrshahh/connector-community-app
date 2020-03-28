@@ -1,0 +1,38 @@
+/*
+** Table of Contents
+** 1. Primary Navigation
+*/
+
+// 1. Primary Navigation
+.primary-navigation {
+
+  ul, li { margin: 0; }
+  ul {
+    display: block;
+    padding: 0 ($menu-spacing / 6);
+    text-align: right;
+    
+    li {
+      display: inline-block;
+      
+      a {
+        color: $menu-primary;
+        height: $header-height;
+        line-height: $header-height;
+        text-decoration: none;
+        padding: 0 ($menu-spacing / 6);
+      }
+    }
+  }
+  @include breakpoint('medium') {
+    ul {
+      padding: 0 ($menu-spacing / 2);
+      
+      li {
+        a {
+          padding: 0 ($menu-spacing / 2);
+        }
+      }
+    }
+  }
+}
