@@ -18,7 +18,7 @@ export default () => (
             <li>Select people you want to help</li>
             <li>Help and mark the request fulfilled so we know when to thank you :)</li>
           </ol>
-          <Button text="Sign Up to Volunteer" link="#"/>
+          <Button text="Sign Up to Volunteer" link="/sign-up/volunteer"/>
         </div>
       </div>
       <div className="col-12 col-md-5">
