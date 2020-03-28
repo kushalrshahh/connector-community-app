@@ -1,0 +1,45 @@
+/*
+** Table of Contents
+** This is a resource file shared across all .scss files.
+** 1. Breakpoint Mixin
+** 2. Global Variables
+*/
+
+// 1. Breakpoint Mixin -- https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+$breakpoints: (
+  'small': 576px,
+  'medium': 769px,
+  'large': 992px,
+  'xlarge': 1024px
+) !default;
+
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else { 
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+// 2. Global Variables
+
+  //Colors
+  $green-light: #8CC64C;
+  $green-dark: #056839;
+
+// 3. Layout Settings
+
+  //Content
+  $site-max-width: 1440px;
