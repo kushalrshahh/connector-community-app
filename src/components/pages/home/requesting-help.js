@@ -23,7 +23,7 @@ export default () => (
             <li>As soon as someone volunteers to help you, you will see their name and they will contact you</li>
             <li>Once you receive help, confirm the request was fulfilled by the volunteer so we can thank them :)</li>
           </ol>
-          <Button text="Sign Up to Request Help" link="/sign-up/requestor"/>
+          <Button text="Sign Up to Request Help" link="#"/>
         </div>
       </div>
     </div>

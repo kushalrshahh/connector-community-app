@@ -18,7 +18,7 @@ export default () => (
         </div>
         <div className="col-12 col-md spacer"></div>
         <div className="col-12 col-md">
-          <Button text="Request Help" link="/sign-up/requestor"/>
+          <Button text="Request Help" link="#"/>
         </div>
       </div>
     </div>
