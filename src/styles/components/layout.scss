@@ -1,0 +1,21 @@
+/*
+** Table of Contents
+** 1. Content
+** 2. Link Styling
+*/
+
+// 1. Content
+.content {
+  margin: 0 auto;
+  max-width: $site-max-width;
+  padding: 0 20px;
+  
+  &.inner-width {
+    max-width: 923px;
+  }
+}
+// 3. Links
+a {
+  color: green;
+  font-weight: bold;
+}
