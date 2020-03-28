@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "covid-connector",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "An app for connecting those in need of help during the COVID-19 crisis with those willing to help.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"No tests written yet!\" && exit 1"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.7",
