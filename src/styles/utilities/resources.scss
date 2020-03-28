@@ -40,8 +40,14 @@ $breakpoints: (
   $green-dark: #056839;
   $grey-light: hsl(0,0%,95%);
   $white: #fff;
+  $heading-primary: hsl(0,0%,22%);
+  $menu-primary: hsl(0,0%,20%);
 
 // 3. Layout Settings
 
   //Content
   $site-max-width: 1440px;
+
+  //Header
+  $header-height: 60px;
+  $menu-spacing: 24px;
