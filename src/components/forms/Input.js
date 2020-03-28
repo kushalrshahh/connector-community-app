@@ -7,7 +7,7 @@ export default (props) => {
     return (
       <label>
           {props.label}
-        <input type="text" name={props.name} placeholder={props.placeholder}/>
+        <input type={props.type} name={props.name} placeholder={props.placeholder}/>
       </label>
     )
   }

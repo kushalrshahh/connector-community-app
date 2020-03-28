@@ -1,20 +1,17 @@
 import React from 'react'
-import TextInput from "../../forms/textInput"
+import Input from "../../forms/input"
 //Stylesheets
 
 
 export default class VolunteerName extends React.Component {
-    state = {
-      firstName: "",
-      lastName: "",
-    }
+
 
     render() {
       return (
-        <form>
-          <TextInput label='First Name' name="firstName" placeholder="First Name"/>
-          <TextInput name="lastName" placeholder="Last Name"/>
-        </form>
+        <div>
+          <Input type='text' label='First Name' name="firstName" placeholder="First Name"/>
+          <Input type='text' name="lastName" placeholder="Last Name"/>
+        </div>
       )
     }
 }
