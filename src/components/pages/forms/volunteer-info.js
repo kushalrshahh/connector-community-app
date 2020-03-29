@@ -37,6 +37,7 @@ export default class VolunteerInfo extends React.Component {
         </div>
         <div className="row no-gutters">
             <div className="col-12 col-md">
+                <p>Are you able to use personal transport?</p>
                 <li class="horiz"> 
                     <Radio label='Yes' name="yes" />
                 </li>
