@@ -24,7 +24,7 @@ export default () => (
         <SectionHeading text="Now is the time to be each other's heroes."/>
       </div>
       <div className="col-12">
-        <p className-="text-center">Stay updated with the world, and with your community. Sign up to see how you can help, or be helped by your neighbors.</p>
+        <p className="text-center">Stay updated with the world, and with your community. Sign up to see how you can help, or be helped by your neighbors.</p>
       </div>
     </div>
   </section>
