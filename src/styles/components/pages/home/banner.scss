@@ -12,7 +12,7 @@
     padding: 30px 20px;
     
     @include breakpoint('large') {
-      padding: 70px 20px 137px;
+      padding: 70px 20px 100px;
     }
   }
   p {
@@ -27,7 +27,6 @@
 
 //3. Banner Image
 .banner-image {
-  background-color: #eaeaea;
   height: 300px;
   line-height: 300px;
   margin-bottom: 30px;

@@ -3,6 +3,8 @@ import React from "react"
 //Components
 import Button from "../../forms/button"
 import PageHeading from "../../shared/page-heading"
+import Icon from "../../shared/icon"
+import BannerImage from "../../../images/home/cc-illustrations-home-1.svg"
 
 //Stylesheets
 import "../../../styles/components/pages/home/banner.scss"
@@ -12,7 +14,9 @@ export default () => (
     <div className="content inner-width row justify-content-between">
       <div className="col-12 col-lg-5">
         <div className="banner-image">
-          Image
+          <Icon>
+            <BannerImage/>
+          </Icon>
         </div>
       </div>
       <div className="col-12 col-lg-7">
