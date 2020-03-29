@@ -6,12 +6,8 @@
 // 1. Primary Navigation
 .primary-navigation {
   background-color: $header-background;
-  position: fixed;
-  right: 0;
-  top: 0;
+  border-top: 1px solid hsla(0,0%,0%,0.2);
   transition: transform 300ms ease-out;
-  width: 80%;
-  // transform: translateX(102%);
 
   ul, li { margin: 0; }
   ul {
@@ -27,22 +23,28 @@
         font-family: $heading-font;
         font-size: 24px;
         font-weight: 600;
-        height: $header-height;
-        line-height: $header-height;
+        height: $header-height / 1.5;
+        line-height: $header-height / 1.5;
         text-decoration: none;
         padding: 0 ($menu-spacing / 2);
       }
     }
   }
   @include breakpoint('medium') {
+    position: relative;
     ul {
       padding: 0 ($menu-spacing / 2);
       
       li {
         a {
+          height: $header-height;
+          line-height: $header-height;
           padding: 0 ($menu-spacing / 2);
         }
       }
     }
+  }
+  @include breakpoint('xlarge') {
+    border-top: none;
   }
 }
