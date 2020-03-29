@@ -28,6 +28,10 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components/pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/components" />
@@ -45,7 +49,7 @@
       <updated>1585283784588</updated>
       <workItem from="1585283788634" duration="1488000" />
       <workItem from="1585329335946" duration="2000" />
-      <workItem from="1585329370842" duration="24523000" />
+      <workItem from="1585329370842" duration="31067000" />
     </task>
     <servers />
   </component>

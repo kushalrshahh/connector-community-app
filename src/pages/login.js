@@ -63,9 +63,16 @@ render() {
                     <div>
                         <Button text="LOGIN" link="#"/>
                     </div>
+                    <div>
                     <Link to="/signupPage" state={{
                         modal: true
                     }}>Create an Account</Link>
+                    </div>
+                    <div>
+                        <Link to="/communityFormModal" state={{
+                            modal: true
+                        }}>Create a new community</Link>
+                    </div>
                 </div>
             )}
         </ModalRoutingContext.Consumer>

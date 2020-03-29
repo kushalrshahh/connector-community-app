@@ -3,6 +3,7 @@ import React from "react"
 //Components
 import Button from "../../forms/button"
 import PageHeading from "../page-heading"
+import { Link } from 'gatsby'
 
 //Stylesheets
 import "../../../styles/components/pages/home/banner.scss"
