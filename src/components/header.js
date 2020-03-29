@@ -23,15 +23,15 @@ export default () => {
   //   `)
     return (
       <header>
-      <div className="content row">
-        <div className="col-5">
+      <div className="content row no-gutters">
+        <div className="col-12 col-lg-5">
           <div className="logo">
             <Link to="/">
               <Logo/>
             </Link>
           </div>
         </div>
-        <div className="col-7">
+        <div className="col-lg-7">
           <Menu />
         </div>
       </div>

@@ -5,11 +5,18 @@
 
 // 1. Primary Navigation
 .primary-navigation {
+  background-color: $header-background;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: transform 300ms ease-out;
+  width: 80%;
+  // transform: translateX(102%);
 
   ul, li { margin: 0; }
   ul {
     display: block;
-    padding: 0 ($menu-spacing / 6);
+    padding: 0 ($menu-spacing / 2);
     text-align: right;
     
     li {
@@ -17,10 +24,13 @@
       
       a {
         color: $menu-primary;
+        font-family: $heading-font;
+        font-size: 24px;
+        font-weight: 600;
         height: $header-height;
         line-height: $header-height;
         text-decoration: none;
-        padding: 0 ($menu-spacing / 6);
+        padding: 0 ($menu-spacing / 2);
       }
     }
   }

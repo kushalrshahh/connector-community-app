@@ -3,28 +3,33 @@
 ** 1. General
 */
 
-$spacing-from-center: 5%;
+$spacing-from-center: 10%;
 
 
 // 1. General
 .help-counter {
-  background-color: lighten($green-dark, 10%);
+  background-color: $background-dark-green;
   color: #fff;
-  padding: 20px 0;
+  padding: 0 0 20px;
 
   .row {
     max-width: 650px;
   }
 }
 .counter {
+  font-family: 'Raleway';
   margin: 0 auto;
   margin-bottom: 0;
   padding: 10px 0;
   text-align: center;
   width: 120px;
 
-  span { font-size: 2em; }
-  figcaption { font-size: 1.2em }
+  span {
+    font-size: 64px;
+  }
+  figcaption { 
+    font-size: 1.3em
+  }
 
   @include breakpoint('small') {
     .right & { margin: 0 0 0 auto; }

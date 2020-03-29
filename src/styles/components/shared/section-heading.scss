@@ -4,8 +4,8 @@
 */
 
 // 1. General
-.primary-heading {
-  h1 {
-    opacity: 0.95;
+.section-heading {
+  h2 {
+    @include heading-styles;
   }
 }

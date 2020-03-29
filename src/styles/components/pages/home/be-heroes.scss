@@ -1,0 +1,19 @@
+/*
+** Table of Contents
+** 1. General
+*/
+
+// 1. General
+.be-heroes {
+  background-color: $background-light-yellow;
+  .squeezed {
+    margin: 0 auto;
+    max-width: 582px;
+    padding: 20px 0 46px;
+  }
+  p { margin-bottom: 0; }
+}
+.heroes-block {
+  height: 250px;
+  background-color: darken($background-light-yellow, 7%);
+}

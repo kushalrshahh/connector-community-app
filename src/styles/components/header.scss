@@ -5,17 +5,21 @@
 
 // 1. General
 header {
-  height: 60px;
+  background-color: $header-background;
+  height: $header-height;
   position: relative;
 }
 .logo {
-  padding: 10px;
+  padding: 21.5px 0;
   display: inline-block;
-  height: $header-height;
-  width: 242px;
+
+  a {
+    display: block;
+  }
 
   svg {
-    height: 40px;
+    height: 66.5px;
+    max-width: 70vw;
   }
 
   .site-name {
