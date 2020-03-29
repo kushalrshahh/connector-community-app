@@ -3,7 +3,7 @@ import React from 'react'
 
 //Components
 import Menu from "./menu"
-import Logo from "../images/icons/cc-logo-full-color.svg"
+import Logo from "../images/icons/cc-wordmark-colored.svg"
 import { Link } from "gatsby"
 
 //Stylesheets
