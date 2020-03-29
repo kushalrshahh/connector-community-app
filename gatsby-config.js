@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-modal-routing`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-sass-resources`,
