@@ -4,6 +4,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import VolunteerText from "../../components/pages/forms/volunteer-text"
 import VolunteerInfo from "../../components/pages/forms/volunteer-info"
+import Terms from "../../components/pages/forms/terms"
 
 export default class VolunteerForm extends  React.Component {
 
@@ -13,10 +14,9 @@ export default class VolunteerForm extends  React.Component {
       <Layout pageClass="home">
       <div>
   
+      <Terms/>
 
-      <VolunteerText/>
-
-        <VolunteerInfo/>
+      <VolunteerInfo/>
 
       </div>
     </Layout>

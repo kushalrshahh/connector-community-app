@@ -7,7 +7,7 @@ export default (props) => {
     return (
       <label>
           {props.label}
-        <input type={props.type} name={props.name} value = {props.value} placeholder={props.placeholder} maxlength={props.maxlength} minLength={props.minLength}/>
+        <input type={props.type} name={props.name} placeholder={props.placeholder} maxLength={props.maxlength} minLength={props.minLength} />
       </label>
     )
   }
