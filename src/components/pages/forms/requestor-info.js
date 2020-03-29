@@ -49,11 +49,14 @@ export default class RequestorInfo extends React.Component {
           handleCheckboxChange = event =>
           this.setState({ checked: event.target.checked });
 
+
     render() {
       return (
-          <>
-           
-           <section className="requestor-info">
+        <div>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+            <div className="card" id="contact">
+                <div className="card-body">
+                <section className="requestor-info">
             <div className="content inner-width">
                 <div className="col-12">
                     {/* <div className="content row"> */}
@@ -175,10 +178,9 @@ export default class RequestorInfo extends React.Component {
       </div>
       {/* </div> */}
     </section>
-
-
-        
-        </>
+                </div>
+            </div>
+        </div>
       )
     }
 }
