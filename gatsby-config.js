@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-sass-resources`,
@@ -25,17 +26,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        contentTypes: [
-          `event`,
-          `user`
-        ],
-        queryLimit: 1000,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     contentTypes: [
+    //       `event`,
+    //       `user`
+    //     ],
+    //     queryLimit: 1000,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
