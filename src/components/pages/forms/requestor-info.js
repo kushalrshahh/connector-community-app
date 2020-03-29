@@ -2,7 +2,7 @@ import React from 'react'
 import Input from "../../forms/input"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
-import PageHeading from "../page-heading"
+
 //Stylesheets
 import "../../../styles/components/pages/forms/requestor-info.scss"
 
