@@ -1,11 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `CommunityConnector`,
+    title: `COVID Connector`,
     description: `Connecting those that need help with those that are able and willing to provide it during the COVID pandemic.`,
-    author: `CommunityConnector Team`,
+    author: `COVID Connector Team`,
+    copyright: `© 2020`,
+    support: `info@covid-connector.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-sass-resources`,
@@ -23,17 +26,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        contentTypes: [
-          `event`,
-          `user`
-        ],
-        queryLimit: 1000,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: `http://localhost:1337`,
+    //     contentTypes: [
+    //       `event`,
+    //       `user`
+    //     ],
+    //     queryLimit: 1000,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

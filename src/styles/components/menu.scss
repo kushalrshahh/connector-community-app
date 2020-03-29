@@ -5,11 +5,14 @@
 
 // 1. Primary Navigation
 .primary-navigation {
+  background-color: $header-background;
+  border-top: 1px solid hsla(0,0%,0%,0.2);
+  transition: transform 300ms ease-out;
 
   ul, li { margin: 0; }
   ul {
     display: block;
-    padding: 0 ($menu-spacing / 6);
+    padding: 0 ($menu-spacing / 2);
     text-align: right;
     
     li {
@@ -17,22 +20,31 @@
       
       a {
         color: $menu-primary;
-        height: $header-height;
-        line-height: $header-height;
+        font-family: $heading-font;
+        font-size: 24px;
+        font-weight: 600;
+        height: $header-height / 1.5;
+        line-height: $header-height / 1.5;
         text-decoration: none;
-        padding: 0 ($menu-spacing / 6);
+        padding: 0 ($menu-spacing / 2);
       }
     }
   }
   @include breakpoint('medium') {
+    position: relative;
     ul {
       padding: 0 ($menu-spacing / 2);
       
       li {
         a {
+          height: $header-height;
+          line-height: $header-height;
           padding: 0 ($menu-spacing / 2);
         }
       }
     }
+  }
+  @include breakpoint('xlarge') {
+    border-top: none;
   }
 }

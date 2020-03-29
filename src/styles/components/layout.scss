@@ -1,17 +1,23 @@
 /*
 ** Table of Contents
-** 1. Content
+** 1a. Body
+** 1b. Content
 ** 2. Link Styling
 */
 
-// 1. Content
+// 1a. Body
+  body {
+    overflow-x: hidden;
+  }
+
+// 1b. Content
 .content {
   margin: 0 auto;
   max-width: $site-max-width;
   padding: 0 20px;
   
   &.inner-width {
-    max-width: 923px;
+    max-width: 1087px;
   }
 }
 

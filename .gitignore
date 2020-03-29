@@ -2,3 +2,6 @@
 /.cache
 /public
 /.vscode
+.firebaserc
+firebase.json
+/.firebase

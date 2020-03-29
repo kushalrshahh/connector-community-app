@@ -4,4 +4,8 @@
 */
 
 // 1. General
-// footer {}
+footer {
+  background-color: $header-background;
+  min-height: 200px;
+  padding: 20px 0;
+}
