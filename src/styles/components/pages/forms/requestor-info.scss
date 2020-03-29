@@ -6,7 +6,7 @@
 
 // 1. General
 .requestor-info {
-  background-color: $grey-light;
+  //background-color: $grey-light;
   .content {
     padding: 40px 20px;
   }
@@ -20,3 +20,12 @@ input, label {
 .horiz {
   display: inline-block;
 }
+
+#contact{
+  max-width: 750px;
+  min-height: 1000px;
+  background-color: $grey-light;
+  border-radius: 4% !important;
+  margin-left: 350px;
+}
+

@@ -2,50 +2,68 @@ import React from 'react'
 import Input from "../../forms/input"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
+import PageHeading from "../page-heading"
 //Stylesheets
 import "../../../styles/components/pages/forms/requestor-info.scss"
 
 export default class RequestorInfo extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {firstName: 'example',
+
+    state={ firstName: 'example',
             lastName: '',
             alias: '',
-            aliasCheckbox:'',
+            aliasCheckbox:0,
             phone1:'',
             phone2:'',
             phone3:'',
             email:'',
-            placeholder:"(123) 4567-891"
-
+            placeholder:"(123) 4567-891",
+            submitted: false,
+            email_comm:0,
+            helpshort:'',
+            call:0,
+            message:0,
+            payment:0,
+            free:0,
+            details_volunteer:'',
+            details:''
         };
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    // handleChange(event) {
-    //     this.setState({value: event.target.value});
-    // }
-    handleChange = event => {
-        const target = event.target
-        const value = target.value
-        const name = target.name
-        this.setState({
-          [name]: value,
-        })
-      }
-    handleSubmit = event => {
-    event.preventDefault()
-    alert(`Welcome ${this.state.firstName} ${this.state.lastName}!`)
-    }
+        handleChange = event => {
+            const { state } = this.state;
+            state[event.target.name] = event.target.value;
+            this.setState({ state });
+          };
+          onSubmit = () => {
+            const {
+              state: { firstName, lastName,alias, aliasCheckbox, phone1, phone2, phone3,email}
+            } = this.state;
+            let err = {};
+
+        
+            this.setState({ errors: err }, () => {
+              if (Object.getOwnPropertyNames(this.state.errors).length === 0) {
+                this.setState({ submitted: true });
+              }
+            });
+          };
+
+          handleCheckboxChange = event =>
+          this.setState({ checked: event.target.checked });
+
+
     render() {
       return (
-          <>
-           
-           <section className="requestor-info">
+        <div >
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+            <div className="content inner-width">
+          <div className="col-12 ">
+            <div className="content row justify-content-center">
+            
+            <div className="card" id="contact">
+                <div className="card-body">
+                <section className="requestor-info">
             <div className="content inner-width">
                 <div className="col-12">
-                    {/* <div className="content row"> */}
                     <Sectionheader text='Contact Information'></Sectionheader>
                         <div>
            
@@ -62,7 +80,7 @@ export default class RequestorInfo extends React.Component {
 
         <div className="row no-gutters">
             <div className="col-6 col-md">
-                <Checkbox name="chkName" id="checkName" label="If you are comfortable sharing your name with the ones you help, please check the box" value={this.state.aliasCheckbox}/>
+                <Checkbox name="chkName" id="checkName" label="If you are comfortable sharing your name with the ones you help, please check the box" checked={this.state.aliasCheckbox} onChange={this.handleCheckboxChange}  />
             </div>
             <div className="col-6 col-md">
                 <Input type="text" label="Alias" name="alias" placeholder="Alias" maxlength="10" value={this.state.alias} onChange={this.handleChange}/><br></br>
@@ -73,7 +91,7 @@ export default class RequestorInfo extends React.Component {
             <div className="col-6 col-md">
                 {/* <div className="row"> */}
                     {/* <div className="col-6"> */}
-                        <Input type="tel" label="Phone Number" name="phone1" maxlength="3"  value={this.state.phone1} onChange={this.handleChange}/>
+                        <Input type="tel" label="Phone Number" name="phone1" maxlength="10"  value={this.state.phone1} onChange={this.handleChange}/>
                     {/* </div> */}
                     {/* <div className="col-4">
                     <Input type="tel" name="phone2" maxlength="3" value={this.state.phone2} onChange={this.handleChange}/>
@@ -91,14 +109,14 @@ export default class RequestorInfo extends React.Component {
          
         <div className="row no-gutters">
             <div className="col-6 col-md">
-            <Input type='text' label='What type of help do you need?' name="helpshort" placeholder="2-3 words"/>
+            <Input type='text' label='What type of help do you need?' name="helpshort" placeholder="2-3 words" value={this.state.helpshort} onChange={this.handleChange}/>
             </div>
         </div>       
           
 
         <div className="row ">
             <div className="col-12">
-                <Input type='text' label='Descibe in detail' name="detail" placeholder="eg. allergies for meals, what time is your doctors appointment and where, grocerylist,etc"/>
+                <Input type='text' label='Descibe in detail' name="detail" placeholder="eg. allergies for meals, what time is your doctors appointment and where, grocerylist,etc" value={this.state.details} onChange={this.handleChange}/>
             </div>
         </div>  
           
@@ -107,20 +125,20 @@ export default class RequestorInfo extends React.Component {
      
         <div className="row no-gutters">
             <div className="col-12 col-md">
-                <Input type='text' label='Is there anything else your volunteer should know?' name="firstName" placeholder="How can we better assist you"/>
+                <Input type='text' label='Is there anything else your volunteer should know?' name="firstName" placeholder="How can we better assist you" value={this.state.details_volunteer} onChange={this.handleChange}/>
             </div>
         </div>
 
         <div className="row no-gutters">
             <div className="col-12 col-md">
-                <li class="horiz"> 
-                    <Checkbox label='Call' name="call" />
+                <li className="horiz"> 
+                    <Checkbox label='Call' name="call" checked={this.state.call} onChange={this.handleCheckboxChange} />
                 </li>
-                <li class="horiz"> 
-                    <Checkbox label='Message' name="message" />
+                <li className="horiz"> 
+                    <Checkbox label='Message' name="message" checked={this.state.message} onChange={this.handleCheckboxChange} />
                 </li>
-                <li class="horiz"> 
-                    <Checkbox label='Email' name="email" />
+                <li className="horiz"> 
+                    <Checkbox label='Email' name="email" checked={this.state.email_comm} onChange={this.handleCheckboxChange} />
                 </li>
             </div>
         </div>
@@ -128,11 +146,11 @@ export default class RequestorInfo extends React.Component {
         <div className="row no-gutters">
             <div className="col-12 col-md">
                 <p>In case of purchase items</p>
-                <li class="horiz"> 
-                    <Checkbox label='I will pay' name="pay" />
+                <li className="horiz"> 
+                    <Checkbox label='I will pay' name="pay"  checked={this.state.payment} onChange={this.handleCheckboxChange}/>
                 </li>
-                <li class="horiz">
-                    <Checkbox label='I am unable to afford services' name="free" />
+                <li className="horiz">
+                    <Checkbox label='I am unable to afford services' name="free"  checked={this.state.free} onChange={this.handleCheckboxChange}/>
                 </li>
                 
 
@@ -164,10 +182,13 @@ export default class RequestorInfo extends React.Component {
       </div>
       {/* </div> */}
     </section>
+                </div>
+            </div>
 
-
-        
-        </>
+            </div>
+          </div>
+        </div>
+        </div>
       )
     }
 }
