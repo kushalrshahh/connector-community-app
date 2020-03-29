@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `CommunityConnector`,
+    title: `COVID Connector`,
     description: `Connecting those that need help with those that are able and willing to provide it during the COVID pandemic.`,
-    author: `CommunityConnector Team`,
+    author: `COVID Connector Team`,
+    copyright: `© 2020`,
+    support: `info@covid-connector.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
