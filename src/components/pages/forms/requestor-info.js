@@ -59,7 +59,6 @@ export default class RequestorInfo extends React.Component {
                 <section className="requestor-info">
             <div className="content inner-width">
                 <div className="col-12">
-                    {/* <div className="content row"> */}
                     <Sectionheader text='Contact Information'></Sectionheader>
                         <div>
            

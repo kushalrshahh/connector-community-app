@@ -2,7 +2,6 @@ import React from "react"
 
 //Components
 import Layout from "../../components/layout"
-import VolunteerText from "../../components/pages/forms/volunteer-text"
 import VolunteerInfo from "../../components/pages/forms/volunteer-info"
 import Terms from "../../components/pages/forms/terms"
 
