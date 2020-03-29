@@ -10,11 +10,12 @@ header {
 }
 .logo {
   padding: 10px;
-  position: inline-block;
-  height: $header-height - 20px;
+  display: inline-block;
+  height: $header-height;
+  width: 242px;
 
-  img {
-    height: 100%;
+  svg {
+    height: 40px;
   }
 
   .site-name {
