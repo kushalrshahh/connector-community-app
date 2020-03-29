@@ -1,5 +1,5 @@
 import React from "react"
-
+import FromHeading from "../../components/forms/formHeading"
 //Components
 import Layout from "../../components/layout"
 import VolunteerInfo from "../../components/pages/forms/volunteer-info"
@@ -10,9 +10,9 @@ export default class VolunteerForm extends  React.Component {
   render () {
 
     return (
-      <Layout pageClass="home">
+      <Layout pageClass="form">
       <div>
-  
+      <FromHeading text='Volunteer Sign-Up Form'/>
       <Terms/>
 
       <VolunteerInfo/>
