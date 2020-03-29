@@ -8,24 +8,21 @@
 
 // 1. General
 .terms {
-    background-color: $grey-light;
-    .content {
-      padding: 40px 20px;
-    }
+  background-color: $grey-light;
+  .content {
+    padding: 40px 20px;
+    margin-left: 100px;
   }
-  
-  // 2. Sub-Heading
-  .sub-heading {
-    margin-bottom: 10px;
-  }
-  
-  // 3. Primary Heading
-  .home .primary-heading {
-    margin-bottom: 162px;
-  }
-  
-  // 4. Button Spacer
-  .spacer {
-    max-width: 75px;
-    min-height: 20px;
-  }
+}
+
+
+#terms{
+margin-bottom: 50px;
+border-radius: 4% !important;
+background-color: $grey-light;
+}
+
+.terms-conditions{
+
+
+}
