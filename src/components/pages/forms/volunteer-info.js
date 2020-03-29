@@ -1,6 +1,8 @@
 import React from 'react'
 import Input from "../../forms/input"
-import Checkbox from "../../forms/checkbox"
+import Radio from "../../forms/radio"
+
+
 //Stylesheets
 import "../../../styles/components/pages/forms/volunteer-info.scss"
 
@@ -11,45 +13,18 @@ export default class VolunteerInfo extends React.Component {
           <>
         <div className="row no-gutters">
             <div className="col-12 col-md">
-                <Input type='text' label='What type of help do you need?' name="helpshort" placeholder="2-3 words"/>
-            </div>
-        </div>
-        <div className="row no-gutters">
-            <div className="col-12 col-md">
-                <Input type='text' label='Descibe in detail' name="detail" placeholder="eg. allergies for meals, what time is your doctors appointment and where, grocerylist,etc"/>
-            </div>
-        </div>       
-        <div className="row no-gutters">
-            <div className="col-12 col-md">
-                <Input type='text' label='Is there anything else your volunteer should know?' name="firstName" placeholder="How can we better assist you"/>
-            </div>
-        </div>
-
-        <div className="row no-gutters">
-            <div className="col-12 col-md">
                 <li class="horiz"> 
-                    <Checkbox label='Call' name="call" />
+                    <Radio label='Yes' name="yes" />
                 </li>
                 <li class="horiz"> 
-                    <Checkbox label='Message' name="message" />
-                </li>
-                <li class="horiz"> 
-                    <Checkbox label='Email' name="email" />
+                    <Radio label='No - All requests must be walking distance from me.' name="no" />
                 </li>
             </div>
         </div>
 
         <div className="row no-gutters">
             <div className="col-12 col-md">
-                
-                <li class="horiz"> 
-                    <Checkbox label='I will pay' name="pay" />
-                </li>
-                <li class="horiz">
-                    <Checkbox label='I am unable to afford services' name="free" />
-                </li>
-                
-
+                <Input type='text' label='What would you like to help with?' name="helpme" placeholder="things you are willing to do. eg. buying groceries or driving to the doctor"/>
             </div>
         </div>
 

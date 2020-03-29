@@ -6,12 +6,25 @@ import VolunteerText from "../../components/pages/forms/volunteer-text"
 import ContactInfo from "../../components/pages/forms/contact-info"
 import VolunteerInfo from "../../components/pages/forms/volunteer-info"
 
-const VolunteerForm = () => (
-  <Layout pageClass="home">
-    <VolunteerText/>
-    <ContactInfo/>
-    <VolunteerInfo/>
-  </Layout>
-)
+export default class VolunteerForm extends  React.Component {
 
-export default VolunteerForm
+
+
+  render () {
+    return (
+      <Layout pageClass="home">
+      <div>
+  
+  
+      <VolunteerText/>
+      <form>
+        <ContactInfo/>
+        <VolunteerInfo/>
+      <button type="submit">Submit</button>
+      </form>
+      </div>
+    </Layout>
+    )
+  }
+
+}
