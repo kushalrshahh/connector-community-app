@@ -2,6 +2,7 @@ import React from 'react'
 import Input from "../../forms/input"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
+import PageHeading from "../page-heading"
 //Stylesheets
 import "../../../styles/components/pages/forms/requestor-info.scss"
 
@@ -52,8 +53,12 @@ export default class RequestorInfo extends React.Component {
 
     render() {
       return (
-        <div>
+        <div >
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+            <div className="content inner-width">
+          <div className="col-12 ">
+            <div className="content row justify-content-center">
+            
             <div className="card" id="contact">
                 <div className="card-body">
                 <section className="requestor-info">
@@ -179,6 +184,10 @@ export default class RequestorInfo extends React.Component {
     </section>
                 </div>
             </div>
+
+            </div>
+          </div>
+        </div>
         </div>
       )
     }
