@@ -8,38 +8,42 @@ import Checkbox from "../../forms/checkbox"
 import "../../../styles/components/pages/forms/volunteer-info.scss"
 
 export default class VolunteerInfo extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {firstName: 'example',
-            lastName: '',
-            alias: '',
-            aliasCheckbox:'',
-            phone1:'',
-            phone2:'',
-            phone3:'',
-            email:'',
-            placeholder:"(123) 4567-891"
+    state={ firstName: 'example',
+    lastName: '',
+    alias: '',
+    aliasCheckbox:0,
+    phone1:'',
+    phone2:'',
+    phone3:'',
+    email:'',
+    donthavetransport:0,
+    havetransport:0,
+    submitted: false,
+    email_comm:0,
+    help_desc:''
+};
 
-        };
+handleChange = event => {
+    const { state } = this.state;
+    state[event.target.name] = event.target.value;
+    this.setState({ state });
+  };
+  onSubmit = () => {
+    const {
+      state: { firstName, lastName,alias, aliasCheckbox, phone1, phone2, phone3,email}
+    } = this.state;
+    let err = {};
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-    // handleChange(event) {
-    //     this.setState({value: event.target.value});
-    // }
-    handleChange = event => {
-        const target = event.target
-        const value = target.value
-        const name = target.name
-        this.setState({
-          [name]: value,
-        })
+
+    this.setState({ errors: err }, () => {
+      if (Object.getOwnPropertyNames(this.state.errors).length === 0) {
+        this.setState({ submitted: true });
       }
-    handleSubmit = event => {
-    event.preventDefault()
-    alert(`Welcome ${this.state.firstName} ${this.state.lastName}!`)
-    }
+    });
+  };
+
+  handleCheckboxChange = event =>
+  this.setState({ checked: event.target.checked });
 
     render() {
       return (
@@ -69,17 +73,17 @@ export default class VolunteerInfo extends React.Component {
             <div className="col-12 col-md">
                 <p>Are you able to use personal transport?</p>
                 <li className="horiz"> 
-                    <Radio label='Yes' name="yes" />
+                    <Radio label='Yes' name="yes"  checked={this.state.havetransport} onChange={this.handleCheckboxChange}  />
                 </li>
                 <li className="horiz"> 
-                    <Radio label='No - All requests must be walking distance from me.' name="no" />
+                    <Radio label='No - All requests must be walking distance from me.'checked={this.state.donthavetransport} onChange={this.handleCheckboxChange} name="no" />
                 </li>
             </div>
         </div>
 
         <div className="row no-gutters">
             <div className="col-12 col-md">
-                <Input type='text' label='What would you like to help with?' name="helpme" placeholder="things you are willing to do. eg. buying groceries or driving to the doctor"/>
+                <Input type='text' label='What would you like to help with?' name="helpme" placeholder="things you are willing to do. eg. buying groceries or driving to the doctor" value={this.state.help_desc} onChange={this.handleChange}/>
             </div>
         </div>
         <button >Submit</button>
