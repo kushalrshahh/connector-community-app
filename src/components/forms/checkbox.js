@@ -5,11 +5,12 @@ import React from 'react'
 
 export default (props) => {
     return (
-        <div>
+        <div className="container">
             <input type='checkbox' name={props.name} id={props.id} placeholder={props.placeholder}/>
             <label>
                 {props.label}
             </label>
+            <span className="checkmark"></span>
         </div>
     )
   }

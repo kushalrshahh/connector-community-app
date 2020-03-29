@@ -2,7 +2,7 @@ import React from 'react'
 import Input from "../../forms/input"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
-
+import PageHeading from "../page-heading"
 //Stylesheets
 import "../../../styles/components/pages/forms/requestor-info.scss"
 
@@ -165,11 +165,10 @@ export default class RequestorInfo extends React.Component {
             <div className="content row">
                 <div className="list-box">
                     <h3>Health</h3>
-                    <ol>
                     <p>Reminder: We need to know these so our volunteers can help you without worrying. 
                         If you have any questions, please do not take the pledge and email us instead 
                         so we can talk it through. Please check the following boxes to complete the pledge</p>
-                    </ol>
+                    
                 </div>
             </div>
             </div>

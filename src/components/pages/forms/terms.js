@@ -1,7 +1,9 @@
 import React from 'react'
 import Sectionheader from "../../forms/sectionheader"
-//Stylesheets
+import Check from "../../forms/checkbox"
 
+//Stylesheets
+import "../../../styles/components/pages/forms/terms.scss"
 
 
 export default () => (
@@ -16,7 +18,8 @@ export default () => (
                     <div className='terms'>
                         <Sectionheader text='Terms & Conditions'></Sectionheader>
                         <p>We care about you as much as those who need your help. Please fill the form below to help us make sure that we are keeping you and your community safe</p>
-                        <p>Your information is safe with us— we will be using your contact info to connect you with the people who you are willing to help. Please check that you have understood our terms and conditions, and continue to fill the form below.</p>
+                        <p>Your information is safe with us — we will be using your contact info to connect you with the people who you are willing to help. Please check that you have understood our terms and conditions, and continue to fill the form below.</p>
+                        <Check className="term" label='I have read and understood the terms outlined above.' name="chk"/>
                     </div>
                   </div>
                 </div>

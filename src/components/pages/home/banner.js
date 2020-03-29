@@ -3,8 +3,6 @@ import React from "react"
 //Components
 import Button from "../../forms/button"
 import PageHeading from "../../shared/page-heading"
-import Icon from "../../shared/icon"
-import BannerImage from "../../../images/home/cc-illustrations-home-1.svg"
 
 //Stylesheets
 import "../../../styles/components/pages/home/banner.scss"
@@ -14,9 +12,7 @@ export default () => (
     <div className="content inner-width row justify-content-between">
       <div className="col-12 col-lg-5">
         <div className="banner-image">
-          <Icon>
-            <BannerImage/>
-          </Icon>
+          Image
         </div>
       </div>
       <div className="col-12 col-lg-7">
@@ -27,7 +23,7 @@ export default () => (
           <Button text="Volunteer" link="/sign-up/volunteer"/>
         </div>
         <div className="col-auto">
-          <Button text="Request Help" link="#"/>
+          <Button text="Request Help" link="/sign-up/requestor"/>
         </div>
       </div>
 

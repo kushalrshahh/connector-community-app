@@ -1,6 +1,8 @@
 /*
 ** Table of Contents
 ** 1. General
+** 2. Card
+** 
 */
 
 // 1. General
@@ -13,16 +15,13 @@
   }
 }
 
-
+// 2. Card
 #terms{
-margin-bottom: 50px;
+margin: 25px 0 50px;
 border-radius: 4% !important;
 background-color: $grey-light;
+border: 1px solid #ddd !important; 
+border-radius: 15px !important;
 }
 
-.terms-conditions{
-  margin-bottom: 50px;
-  border-radius: 4% !important;
-  background-color: $grey-light;
 
-}
