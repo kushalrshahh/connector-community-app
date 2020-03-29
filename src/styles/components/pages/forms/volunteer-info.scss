@@ -1,4 +1,38 @@
 
-.horiz {
-    display: inline-block;
+  /*
+** Table of Contents
+** 1. General
+** 2. Sub-Heading
+** 3. Primary Heading
+** 4. Button Spacer
+*/
+
+// 1. General
+.volunteer-info {
+  // background-color: $grey-light;
+  .content {
+    padding: 40px 20px;
+    margin-left: 300px;
   }
+}
+
+
+
+input, label {
+  display:block;
+
+}
+
+.horiz {
+  display: inline-block;
+}
+
+#contact{
+  max-width: 750px;
+  min-height: 1000px;
+  background-color: $grey-light;
+  border-radius: 4% !important;
+  margin-left: 350px;
+}
+
+
