@@ -12,8 +12,19 @@
   padding: 40px 0;
   text-align: center;
 }
-.city-split {
+.mobile-hide {
+  display: none;
+
+  @include breakpoint('medium') {
+    display: inline-block;
+  }
+}
+.city {
   display: inline-block;
-  font-weight: 300;
-  margin: 0 20px;
+  padding: 0 20px;
+
+  &:nth-child(2) {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
 }
