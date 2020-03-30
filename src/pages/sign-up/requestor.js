@@ -8,8 +8,7 @@ import Terms from "../../components/pages/forms/terms"
 const RequestorForm = () => (
   <Layout pageClass="form">
     <FromHeading text='Help Request Sign-Up Form'/>
-      <Terms />
-
+      <Terms/>
       <RequestorInfo/>
   </Layout>
 )

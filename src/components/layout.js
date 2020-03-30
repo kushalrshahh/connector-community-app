@@ -17,8 +17,6 @@
        site {
          siteMetadata {
            title
-           copyright
-           support
          }
        }
      }
@@ -27,7 +25,7 @@
      <article className={props.pageClass}>
        <Header siteTitle={data.site.siteMetadata.title} />
        <main>{props.children}</main>
-       <Footer copyright={data.site.siteMetadata.copyright} support={data.site.siteMetadata.support} />  
+       <Footer />  
      </article>
    )
  }

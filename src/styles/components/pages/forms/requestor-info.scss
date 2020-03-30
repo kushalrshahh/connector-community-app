@@ -22,10 +22,9 @@ input, label {
 }
 
 #contact{
-  max-width: 750px;
-  min-height: 1000px;
   background-color: $grey-light;
-  border-radius: 4% !important;
   margin-left: 350px;
+  border: 1px solid #ddd !important; 
+  border-radius: 15px !important; 
 }
 
