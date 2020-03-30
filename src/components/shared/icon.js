@@ -1,8 +1,8 @@
 import React from "react"
 
-export default ({children, height, width}) => {
+export default ({children, height, width, sizeStyle}) => {
   return (
-    <i className="icon" height={height} width={width}>
+    <i style={sizeStyle} className="icon" height={height} width={width}>
       {children}
     </i>
   )
