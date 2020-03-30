@@ -2,21 +2,33 @@ import React from "react"
 
 //Components
 import SectionHeading from "../../shared/section-heading"
+import Icon from "../../shared/icon"
+
+//Assets
+import HeroImage1 from "../../../images/home/cc-illustrations-home-02.svg"
+import HeroImage2 from "../../../images/home/cc-illustrations-home-03.svg"
+import HeroImage3 from "../../../images/home/cc-illustrations-home-04.svg"
 
 //Stylesheets
 import "../../../styles/components/pages/home/be-heroes.scss"
 
 export default () => (
   <section className="be-heroes">
-    <div className="row justify-content-center">
+    <div className="content row justify-content-center">
       <div className="heroes-block col-12 col-md-4">
-        Block
+        <Icon>
+          <HeroImage1/>
+        </Icon>
       </div>
       <div className="heroes-block col-12 col-md-4">
-        Block
+        <Icon>
+          <HeroImage2/>
+        </Icon>
       </div>
       <div className="heroes-block col-12 col-md-4">
-        Block
+        <Icon>
+          <HeroImage3/>
+        </Icon>
       </div>
     </div>
     <div className="row squeezed">

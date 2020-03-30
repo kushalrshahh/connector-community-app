@@ -6,6 +6,8 @@
 // 1. General
 .be-heroes {
   background-color: $background-light-yellow;
+  padding: 70px 0;
+  
   .squeezed {
     margin: 0 auto;
     max-width: 582px;
@@ -14,6 +16,10 @@
   p { margin-bottom: 0; }
 }
 .heroes-block {
-  height: 250px;
-  background-color: darken($background-light-yellow, 7%);
+  height: 300px;
+  text-align: center;
+  padding: 20px;
+
+  @include breakpoint('medium') { height: 29vw; }
+  @include breakpoint('xlarge') { height: 360px; }
 }
