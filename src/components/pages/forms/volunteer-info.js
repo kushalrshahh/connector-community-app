@@ -3,6 +3,7 @@ import Input from "../../forms/input"
 import Radio from "../../forms/radio"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
+import Button from "../../forms/button"
 
 //Stylesheets
 import "../../../styles/components/pages/forms/volunteer-info.scss"
