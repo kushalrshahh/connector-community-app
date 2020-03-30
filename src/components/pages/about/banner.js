@@ -28,7 +28,7 @@ export default ({children}) => {
         <div className="col-12 col-lg-6 p-lg-5 p-2 text-center">
           <p className="big-green">{data.helped_count}</p>
           <PageHeading text={data.page_title}/>
-          <p>{data.banner_paragraph}</p>
+          <p className="sub">{data.banner_paragraph}</p>
         </div>
         <div className="col-12 col-lg-3 p-4 p-lg-5">
           <Icon>
