@@ -23,11 +23,11 @@ const ModalExamplePage = () => (
                     <p>But it seems you need to sign up first. It will only take a couple of minutes.</p>
                 </div>
                 <div>
-                    <Button text="Sign up to Volunteer" link="#"/>
+                    <Button text="Volunteer" link="/sign-up/volunteer"/>
                 </div>
 
                 <div>
-                    <Button text="Sign up to Request for Help" link="#"/>
+                    <Button text="Request Help" link="/sign-up/requestor"/>
                 </div>
             </div>
         )}

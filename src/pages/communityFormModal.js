@@ -1,8 +1,12 @@
 import React from 'react'
+
+//Components
 import { Link } from 'gatsby'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import TextBox from '../components/forms/textbox'
 import Button from '../components/forms/button'
+import PageHeading from '../components/shared/page-heading'
+
 class CommunityFormModal extends React.Component {
     constructor(props) {
         super(props);
@@ -28,15 +32,13 @@ class CommunityFormModal extends React.Component {
                {({modal, closeTo}) => (
                    <div>
                        {modal ? (
-                           <Link to={closeTo}>
+                           <Link className="close-link" to={closeTo}>
                                Close
                            </Link>
                        ) : (
-                        <header>
-                        <h1>
-                        Website Title
-                        </h1>
-                        </header>
+                        <div className="content">
+                            <PageHeading text="COVID Connector Login"/>
+                        </div>
                        )}
 
                        { (this.state.step) ?

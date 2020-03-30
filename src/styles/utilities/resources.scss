@@ -89,3 +89,48 @@ $breakpoints: (
       width: 100%;
     }
   }
+
+  //5. Modal
+  .ReactModal__Content {
+    background: #E8E7E7!important;
+    border: none!important;
+    border-bottom: 3px solid hsla(0,0%,0%,0.2)!important;
+    border-radius: 30px!important;
+    bottom: auto!important;
+    left: 50%!important;
+    max-width: 100vw;
+    overflow: auto!important;
+    outline: none!important;
+    padding: 40px!important;
+    position: absolute!important;
+    right: auto!important;
+    top: 50%!important;
+    text-align: center;
+    transform: translate(-50%,-50%)!important;
+    width: 400px;
+
+    .button {
+      margin-bottom: 20px;
+    }
+    p.p-label {
+      font-size: 0.9em;
+      font-weight: 600;
+      margin-bottom: 4px;
+      text-align: left;
+    }
+    a.close-link {
+      background-color: green;
+      border-radius: 100%;
+      color: white;
+      font-family: "Raleway";
+      font-size: 0.8em;
+      height: 24px;
+      line-height: 24px;
+      position: absolute;
+      right: 20px;
+      text-align: center;
+      text-decoration: none;
+      top: 20px;
+      width: 24px;
+    }
+  }
