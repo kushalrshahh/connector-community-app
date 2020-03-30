@@ -8,6 +8,7 @@ import GreenBar from "../components/shared/green-bar"
 import ComunityCounter from "../components/shared/help-counter"
 import OurPurpose from "../components/pages/about/our-purpose"
 import QuoteBar from "../components/shared/quote-bar"
+import OurGoals from "../components/pages/about/our-goals"
 
 export default function Profile() {
   let community_counts = [
@@ -40,6 +41,7 @@ export default function Profile() {
       <GreenBar>
         <QuoteBar/>
       </GreenBar>
+      <OurGoals/>
     </Layout>
   )
 }
