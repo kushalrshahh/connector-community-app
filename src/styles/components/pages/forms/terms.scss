@@ -7,24 +7,30 @@
 */
 
 // 1. General
-.terms {
+// .terms {
+//   background-color: $grey-light;
+//   .content {
+//     padding: 40px 20px;
+//     margin-left: 100px;
+//   }
+// }
+
+
+// #terms-card{
+// margin-bottom: 50px;
+// border-radius: 4% !important;
+// background-color: $grey-light;
+// }
+
+// .terms-conditions{
+//   // margin-bottom: 8px;
+//   border-radius: 4% !important;
+// }
+
+#terms-card{
+  max-width: 750px;
+  // min-height: 1000px;
   background-color: $grey-light;
-  .content {
-    padding: 40px 20px;
-    margin-left: 100px;
-  }
-}
-
-
-#terms{
-margin-bottom: 50px;
-border-radius: 4% !important;
-background-color: $grey-light;
-}
-
-.terms-conditions{
-  margin-bottom: 50px;
   border-radius: 4% !important;
-  background-color: $grey-light;
-
+  // margin-left: 350px;
 }

@@ -11,13 +11,13 @@ export default class VolunteerForm extends  React.Component {
 
     return (
       <Layout pageClass="form">
-      <div>
+    
       <FromHeading text='Volunteer Sign-Up Form'/>
       <Terms/>
 
       <VolunteerInfo/>
 
-      </div>
+      
     </Layout>
     )
   }
