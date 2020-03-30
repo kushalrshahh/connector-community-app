@@ -1,0 +1,30 @@
+/*
+** Table of Contents - About Page - Section One - Banner
+** 1. General
+*/
+
+// 1. General
+.about-banner {
+  background-color: $background-light-yellow;
+
+  h1 {
+    font-size: 4em;
+    margin-bottom: 30px;
+  }
+
+  .icon {
+    padding-top: 60px;
+  }
+}
+.banner-space {
+  padding-top: 30px;
+}
+.big-green {
+  font-size: 3em;
+  color: $green-light;
+  margin-bottom: 0;
+
+  @include breakpoint("large") {
+    font-size: 6em;
+  }
+}

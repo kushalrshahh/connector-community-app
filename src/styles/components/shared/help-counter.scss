@@ -5,15 +5,22 @@
 
 $spacing-from-center: 10%;
 
-
 // 1. General
 .help-counter {
   background-color: $background-dark-green;
   color: #fff;
-  padding: 0 0 20px;
+  padding: 20px 0 40px;
+
+  .about-us & {
+    padding: 0;
+  }
 
   .row {
     max-width: 650px;
+
+    .about-us & {
+      max-width: 1100px;
+    }
   }
 }
 .counter {
@@ -24,11 +31,20 @@ $spacing-from-center: 10%;
   text-align: center;
   width: 120px;
 
+  .about-us & {
+    width: 220px;
+    padding: 0;
+  }
+
   span {
     font-size: 64px;
   }
   figcaption { 
-    font-size: 1.3em
+    font-size: 1.3em;
+
+    .about-us & {
+      font-size: 1.6em;
+    }
   }
 
   @include breakpoint('small') {

@@ -1,0 +1,20 @@
+/*
+** Table of Contents - About Page - Our Purpose
+** 1. General
+*/
+
+// 1. General
+.our-purpose {
+  background-color: $background-light-yellow;
+
+  p { font-size: 1.2em; }
+
+  .illustration {
+    @include breakpoint("xlarge") {
+      i.icon {
+        height: 464px;
+        width: 452px;
+      }
+    }
+  }
+}

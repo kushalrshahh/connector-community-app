@@ -1,0 +1,20 @@
+/*
+** Table of Contents - About Page - Quote Bar
+** 1. General
+*/
+
+// 1. General
+.quote-bar {
+  color: $white;
+  font-size: 1.2em;
+  line-height: 1.8;
+  max-width: 800px;
+}
+.quote {
+  display: block;
+  margin-bottom: 5px;
+}
+p.author {
+  font-family: $heading-font;
+  margin-bottom: 0;
+}
