@@ -6,6 +6,29 @@
 // 1. General
 footer {
   background-color: $header-background;
-  min-height: 200px;
-  padding: 20px 0;
+  color: lighten(#000,3%);
+  padding: 40px 0;
+  font-weight: bold;
+
+  a {
+    color: lighten(#000,3%);
+    font-size: 0.9em;
+    line-height: 0.8;
+    text-decoration: none;
+    transition: color 200ms ease-out;
+
+    &:hover, &:focus {
+      color: $green-dark;
+    }
+  }
+  p {
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  .help {
+    font-size: 0.8em;
+  }
+  .logo-mark {
+    max-width: 124px;
+  }
 }
