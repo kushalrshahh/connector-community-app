@@ -1,7 +1,6 @@
 import React from 'react'
 import Input from "../../forms/input"
 import Radio from "../../forms/radio"
-import Button from "../../forms/button"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
 
@@ -9,6 +8,7 @@ import Sectionheader from "../../forms/sectionheader"
 import "../../../styles/components/pages/forms/volunteer-info.scss"
 
 export default class VolunteerInfo extends React.Component {
+
     state={ firstName: 'example',
     lastName: '',
     alias: '',
@@ -20,6 +20,7 @@ export default class VolunteerInfo extends React.Component {
     submitted: false,
     email_comm:0,
     help_desc:''
+
 };
 
 handleChange = event => {
@@ -28,9 +29,6 @@ handleChange = event => {
     this.setState({ state });
   };
   onSubmit = () => {
-    const {
-      state: { firstName, lastName,alias, aliasCheckbox, phone1, phone2, phone3,email}
-    } = this.state;
     let err = {};
 
 

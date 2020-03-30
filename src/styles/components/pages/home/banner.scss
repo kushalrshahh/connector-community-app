@@ -2,15 +2,21 @@
 ** Table of Contents
 ** 1. General
 ** 2. Sub-Heading
-** 3. Primary Heading
-** 4. Button Spacer
+** 3. Banner Image
 */
 
 // 1. General
 .banner {
-  background-color: $grey-light;
+  background-color: $background-light-yellow;
   .content {
-    padding: 40px 20px;
+    padding: 30px 20px;
+    
+    @include breakpoint('large') {
+      padding: 70px 20px 100px;
+    }
+  }
+  p {
+    margin-bottom: 36px;
   }
 }
 
@@ -19,13 +25,14 @@
   margin-bottom: 10px;
 }
 
-// 3. Primary Heading
-.home .primary-heading {
-  margin-bottom: 162px;
-}
+//3. Banner Image
+.banner-image {
+  height: 230px;
+  line-height: 300px;
+  margin-bottom: 30px;
+  text-align: center;
 
-// 4. Button Spacer
-.spacer {
-  max-width: 75px;
-  min-height: 20px;
+  @include breakpoint('large') {
+    padding-top: 60px;
+  }
 }

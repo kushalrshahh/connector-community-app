@@ -14,8 +14,8 @@ const typography = new Typography(
       {
         name: 'Raleway',
         styles: [
-          '600',
-          '800'
+          '500',
+          '700'
         ],
       }
     ],

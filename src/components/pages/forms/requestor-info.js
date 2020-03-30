@@ -2,20 +2,21 @@ import React from 'react'
 import Input from "../../forms/input"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
-import PageHeading from "../page-heading"
+
 //Stylesheets
 import "../../../styles/components/pages/forms/requestor-info.scss"
 
 export default class RequestorInfo extends React.Component {
 
-    state={ firstName: 'example',
-            lastName: '',
-            alias: '',
-            aliasCheckbox:0,
-            phone1:'',
-            phone2:'',
-            phone3:'',
-            email:'',
+    state = {
+            // firstName: 'example',
+            // lastName: '',
+            // alias: '',
+            // aliasCheckbox:0,
+            // phone1:'',
+            // phone2:'',
+            // phone3:'',
+            // email:'',
             placeholder:"(123) 4567-891",
             submitted: false,
             email_comm:0,
@@ -34,9 +35,6 @@ export default class RequestorInfo extends React.Component {
             this.setState({ state });
           };
           onSubmit = () => {
-            const {
-              state: { firstName, lastName,alias, aliasCheckbox, phone1, phone2, phone3,email}
-            } = this.state;
             let err = {};
 
         

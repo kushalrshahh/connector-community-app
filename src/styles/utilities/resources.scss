@@ -1,53 +1,89 @@
 /*
 ** Table of Contents
 ** This is a resource file shared across all .scss files.
-** 1. Breakpoint Mixin
-** 2. Global Variables
+** 1. Global Variables
+** 2. Mixins
+** 3. Utility Styles
+** 4. Icons
 */
 
-// 1. Breakpoint Mixin -- https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+// 1. Global Variables
+  
+  //Colors
+    $background-light-yellow: #F6F3EE;
+    $background-dark-green: #056839;
+    $green-light: #8CC64C;
+    $green-dark: #056839;
+    $grey-light: hsl(0,0%,95%);
+    $white: #fff;
+    $heading-primary: hsl(0,0%,22%);
+    $menu-primary: hsl(0,0%,20%);
+  
+  //Layout Settings
+  
+    //Content
+    $site-max-width: 1440px;
+    
+    //Header
+    $header-height: 110px;
+    $header-background: #E8E7E7;
+    $menu-spacing: 24px;
+  
+  // 4. Fonts
+  $heading-font: "Raleway", sans-serif;
+  $body-font: "Open Sans", sans-serif;
+  $section-heading-weight: 500;
+
+// 2. Mixins 
+//    Breakpoints -- https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
 $breakpoints: (
   'small': 576px,
   'medium': 769px,
   'large': 992px,
   'xlarge': 1024px
-) !default;
-
-/// Mixin to manage responsive breakpoints
-/// @author Hugo Giraudel
-/// @param {String} $breakpoint - Breakpoint name
-/// @require $breakpoints
-@mixin breakpoint($breakpoint) {
-  // If the key exists in the map
-  @if map-has-key($breakpoints, $breakpoint) {
-    // Prints a media query based on the value
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
-      @content;
+  ) !default;
+  
+  /// Mixin to manage responsive breakpoints
+  /// @author Hugo Giraudel
+  /// @param {String} $breakpoint - Breakpoint name
+  /// @require $breakpoints
+  @mixin breakpoint($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+    
+    // If the key doesn't exist in the map
+    @else { 
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+      + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
   }
- 
-  // If the key doesn't exist in the map
-  @else { 
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
-  }
+  
+  //Heading Shared Styles
+  @mixin heading-styles {
+    color: $green-dark;
+    font-weight: $section-heading-weight;
+    margin-bottom: 45px;
+    opacity: 0.95;
+    
+    @include breakpoint('large') {
+      font-size: 49px;
+    }
 }
 
-// 2. Global Variables
+// 3. Utility Styles
+  .text-center { text-align: center; }
 
-  //Colors
-  $green-light: #8CC64C;
-  $green-dark: #056839;
-  $grey-light: hsl(0,0%,95%);
-  $white: #fff;
-  $heading-primary: hsl(0,0%,22%);
-  $menu-primary: hsl(0,0%,20%);
+// 4. Icons
+  i.icon {
+    display: inline-block;
 
-// 3. Layout Settings
-
-  //Content
-  $site-max-width: 1440px;
-
-  //Header
-  $header-height: 60px;
-  $menu-spacing: 24px;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }

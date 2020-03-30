@@ -1,9 +1,7 @@
 import React from "react"
 
-import "../../styles/components/forms/sectionheader.scss"
 
-//Components
-import { Link } from "gatsby"
+import "../../styles/components/forms/sectionheader.scss"
 
 export default (props) => {
   return (

@@ -5,8 +5,15 @@
 
 // 1. General
 .participating-cities {
-  background-color: lighten($green-dark, 10%);
+  background-color: $background-dark-green;
   color: $white;
+  font-family: $heading-font;
+  font-size: 24px;
   padding: 40px 0;
   text-align: center;
+}
+.city-split {
+  display: inline-block;
+  font-weight: 300;
+  margin: 0 20px;
 }
