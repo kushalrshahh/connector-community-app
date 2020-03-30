@@ -54,7 +54,7 @@ handleChange = event => {
                     <div className="card" id='volunteer-info-card'>
                       <div className="card-body">
                         <div>
-                          <Sectionheader text='Contact Info'></Sectionheader>
+                          <Sectionheader text='Contact Information'></Sectionheader>
                             <form onSubmit={this.handleSubmit}>
                               <div className="row inputgroup">
                                 <div className="col-6 col-md inputselection">

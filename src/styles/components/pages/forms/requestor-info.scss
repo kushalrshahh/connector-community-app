@@ -23,7 +23,8 @@ input, label {
 
 #contact{
   background-color: $grey-light;
-  margin-left: 350px;
+  // margin-left: 350px;
+  max-width: 750px;
   border: 1px solid #ddd !important; 
   border-radius: 15px !important; 
 }

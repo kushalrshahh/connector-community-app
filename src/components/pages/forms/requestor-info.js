@@ -2,7 +2,7 @@ import React from 'react'
 import Input from "../../forms/input"
 import Checkbox from "../../forms/checkbox"
 import Sectionheader from "../../forms/sectionheader"
-import PageHeading from "../page-heading"
+import Button from "../../forms/button"
 //Stylesheets
 import "../../../styles/components/pages/forms/requestor-info.scss"
 
@@ -51,35 +51,28 @@ export default class RequestorInfo extends React.Component {
 
     render() {
       return (
-        <div >
+        <section className='requestor-info'>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous"></link>
-            <div className="content inner-width">
-          <div className="col-12 ">
-            <div className="content row justify-content-center">
-            
-            <div className="card" id="contact">
-                <div className="card-body">
-                <section className="requestor-info">
-            <div className="content inner-width">
-                <div className="col-12">
-                    <Sectionheader text='Contact Information'></Sectionheader>
-                        <div>
-           
-    <form onSubmit={this.handleSubmit}>
-        <div>
-        <div className="row no-gutters">
-            <div className="col-6 col-md">
-                <Input type="text" label="First Name" name="firstName" placeholder="First Name" value={this.state.firstName} onChange={this.handleChange}/>
-            </div>
-            <div className="col-6 col-md">
-                <Input type="text" label="Last Name" name="lastName" placeholder="Last Name" value={this.state.lastName} onChange={this.handleChange}/>
-            </div>
-        </div>
-
-        <div className="row no-gutters">
-            <div className="col-6 col-md">
-                <Checkbox name="chkName" id="checkName" label="If you are comfortable sharing your name with the ones you help, please check the box" checked={this.state.aliasCheckbox} onChange={this.handleCheckboxChange}  />
-            </div>
+                <div className="content inner-width">
+                    <div className="col-12 ">
+                        <div className="content row justify-content-center">
+                            <div className="card" id="contact">
+                                <div className="card-body">
+                                    <Sectionheader text='Contact Information'></Sectionheader>
+                                        <form onSubmit={this.handleSubmit}>        
+                                            <div>
+                                                <div className="row no-gutters">
+                                                    <div className="col-6 col-md">
+                                                        <Input type="text" label="First Name" name="firstName" placeholder="First Name" value={this.state.firstName} onChange={this.handleChange}/>
+                                                    </div>
+                                                    <div className="col-6 col-md">
+                                                        <Input type="text" label="Last Name" name="lastName" placeholder="Last Name" value={this.state.lastName} onChange={this.handleChange}/>
+                                                    </div>
+                                                </div>
+                                            <div className="row no-gutters">
+                                                <div className="col-6 col-md">
+                                                    <Checkbox name="chkName" id="checkName" label="If you are comfortable sharing your name with the ones you help, please check the box" checked={this.state.aliasCheckbox} onChange={this.handleCheckboxChange}  />
+                                                </div>
             <div className="col-6 col-md">
                 <Input type="text" label="Alias" name="alias" placeholder="Alias" maxlength="10" value={this.state.alias} onChange={this.handleChange}/><br></br>
             </div>
@@ -158,34 +151,48 @@ export default class RequestorInfo extends React.Component {
 
         </div>
 
-        <section className="requestorHealth-text">
-            <div className="col-12 col-md-7">
-            <div className="content row">
-                <div className="list-box">
-                    <h3>Health</h3>
-                    <p>Reminder: We need to know these so our volunteers can help you without worrying. 
+
+        <hr></hr>
+                            <section className="volunteerHealth-text">
+                                <div className="row">
+                                  <div className="col-1"> </div>
+                                  <div className=" col-10 list-box">
+                                    <Sectionheader text='Health Information'></Sectionheader>
+                                      <ol>
+                                        <p>Reminder: We need to know these so our volunteers can help you without worrying. 
                         If you have any questions, please do not take the pledge and email us instead 
-                        so we can talk it through. Please check the following boxes to complete the pledge</p>
-                    
-                </div>
-            </div>
-            </div>
-        </section>
-        <button>submit</button>
+                        so we can talk it through. Please check the following boxes to complete the pledge </p>
+                                      </ol>
+                                      <Checkbox name="symptoms" label="I am not exhibting any symptoms of COVID-19 (cough, feaver, etc.)" value={this.state.aliasCheckbox}/>
+                                      <Checkbox name="country" label="I have not traveled out-of-country in the past 14 days" value={this.state.aliasCheckbox}/>
+                                      <Checkbox name="contactCovid" label="I have not come in contact with a sick person in the past 14 days" value={this.state.aliasCheckbox}/>
+                                      <Checkbox name="socialdistancing" label="I have been practicing social distancing" value={this.state.aliasCheckbox}/>
+                                    </div>
+                                </div>
+
+                                <div className='row ageConfirm'>
+                                  <div className='col-2'> </div>
+                                    <div className="col-8"> 
+                                      <Checkbox name="above18" label="Please confirm you are above 18" value={this.state.aliasCheckbox}/>
+                                    </div>
+                                </div>
+                            </section>
+                            <div className='row'>
+                              <div className='col-4'></div>
+                              <div className='col-4'>
+                              <Button to='/' text='Submit' >Submit</Button>
+                              </div>
+                            
+                            </div>
         </form>
-                
-            </div>
-        </div>
-      </div>
-      {/* </div> */}
-    </section>
+
                 </div>
             </div>
 
             </div>
           </div>
         </div>
-        </div>
+        </section>
       )
     }
 }
