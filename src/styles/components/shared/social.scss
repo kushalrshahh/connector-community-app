@@ -1,0 +1,25 @@
+/*
+** Table of Contents
+** 1. General
+*/
+
+// 1. General
+.social-share {
+  transition: all 300ms;
+}
+
+@include breakpoint("medium") {
+  .social-share {
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+  .relative {
+    position: relative;
+  }
+}
+@include breakpoint("max") {
+  .social-share {
+    right: 0;
+  }
+}

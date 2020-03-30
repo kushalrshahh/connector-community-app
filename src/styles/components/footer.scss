@@ -31,4 +31,9 @@ footer {
   .logo-mark {
     max-width: 124px;
   }
+  .static {
+    @include breakpoint("medium") {
+      position: static;
+    }
+  }
 }
