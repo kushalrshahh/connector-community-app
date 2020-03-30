@@ -1,12 +1,15 @@
 import React from "react"
 
-//Components
-import { Link } from "gatsby"
+
+import "../../styles/components/forms/sectionheader.scss"
 
 export default (props) => {
   return (
     <>
-      <h3>{props.text}</h3>
+      <div className='sectionheader'>
+        <h3>{props.text}</h3>
+      </div>
+      
     </>
   )
 }

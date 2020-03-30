@@ -6,13 +6,33 @@
 */
 
 // 1. General
-.terms {
-  background-color: $grey-light;
-  .content {
-    padding: 40px 20px;
 
-    margin-left: 100px;
-  }
+// .terms {
+//   background-color: $grey-light;
+//   .content {
+//     padding: 40px 20px;
+//     margin-left: 100px;
+//   }
+// }
+
+
+// #terms-card{
+// margin-bottom: 50px;
+// border-radius: 4% !important;
+// background-color: $grey-light;
+// }
+
+// .terms-conditions{
+//   // margin-bottom: 8px;
+//   border-radius: 4% !important;
+// }
+
+#terms-card{
+  max-width: 750px;
+  // min-height: 1000px;
+  background-color: $grey-light;
+  border-radius: 4% !important;
+  // margin-left: 350px;
 }
 
 // 2. Card
@@ -23,5 +43,4 @@ background-color: $grey-light;
 border: 1px solid #ddd !important; 
 border-radius: 15px !important;
 }
-
 
