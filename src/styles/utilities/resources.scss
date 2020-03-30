@@ -4,7 +4,6 @@
 ** 1. Global Variables
 ** 2. Mixins
 ** 3. Utility Styles
-** 4. Icons
 */
 
 // 1. Global Variables
@@ -77,13 +76,3 @@ $breakpoints: (
 
 // 3. Utility Styles
   .text-center { text-align: center; }
-
-// 4. Icons
-  i.icon {
-    display: inline-block;
-
-    svg {
-      height: 100%;
-      width: 100%;
-    }
-  }

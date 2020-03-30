@@ -12,9 +12,7 @@ export default () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/login" state={{
-            modal: true
-          }}>Login</Link>
+          <Link to="/profile">Login</Link>
         </li>
       </ul>
     </nav>

@@ -1,5 +1,5 @@
 import React from "react"
-import PageHeading from "../../components/shared/page-heading"
+import PageHeading from "../../components/pages/page-heading"
 //Components
 import "../../styles/components/forms/form-heading.scss"
 

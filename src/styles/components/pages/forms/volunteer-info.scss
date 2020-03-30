@@ -12,27 +12,48 @@
   // background-color: $grey-light;
   .content {
     padding: 40px 20px;
-    margin-left: 300px;
   }
 }
 
 
 
-input, label {
-  display:block;
+.volunteerHealth-text{
+  text-align: center;
+}
+.inputgroup {
+  padding-top: 20px;
 
 }
 
-.horiz {
-  display: inline-block;
+fieldset {
+  .radio {
+    float: left;
+    clear: none;
+  }
+  label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+  }
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }
 }
 
-#contact{
+#volunteer-info-card{
   max-width: 750px;
   min-height: 1000px;
   background-color: $grey-light;
   border-radius: 4% !important;
-  margin-left: 350px;
+  // margin-left: 350px;
 }
 
+.ageConfirm{
+  padding-top: 20px;
+  
+}
 
