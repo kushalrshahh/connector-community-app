@@ -47,9 +47,9 @@ render() {
 
                     <h2>Welcome back!</h2>
                     <div>
-                    <label>
+                    <p>
                         Name / Email Address
-                    </label>
+                    </p>
                     </div>
                     <div>
                         <TextBox value={this.state.value}  placeholderText={this.state.name} onChange={this.handleChange}/>

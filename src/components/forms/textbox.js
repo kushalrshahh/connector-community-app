@@ -1,8 +1,5 @@
 import React from "react"
 
-//Components
-import { Link } from "gatsby"
-
 export default (props) => {
     return (
         <>

@@ -1,13 +1,12 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {ModalRoutingContext} from 'gatsby-plugin-modal-routing'
-import Button from '../components/forms/button'
 
 const ModalExamplePage = (props) => (
     <ModalRoutingContext.Consumer>
         {({modal, closeTo}) => (
             <div>
-                {modal ? (
+                {/* {modal ? (
                     <Link to={closeTo}>
                         Close
                     </Link>
@@ -17,7 +16,7 @@ const ModalExamplePage = (props) => (
                             Website Title
                         </h1>
                     </header>
-                )}
+                )} */}
                 <div>
                     <p>Volunteer Name</p>
                     <p>{props.location.communityName} is on and running. <br/>

@@ -1,26 +1,26 @@
 import React from 'react'
 import Input from "../../forms/input"
 import Radio from "../../forms/radio"
-import Button from "../../forms/button"
 import Checkbox from "../../forms/checkbox"
 
 //Stylesheets
 import "../../../styles/components/pages/forms/volunteer-info.scss"
 
 export default class VolunteerInfo extends React.Component {
-    state={ firstName: 'example',
-    lastName: '',
-    alias: '',
-    aliasCheckbox:0,
-    phone1:'',
-    phone2:'',
-    phone3:'',
-    email:'',
-    donthavetransport:0,
-    havetransport:0,
-    submitted: false,
-    email_comm:0,
-    help_desc:''
+    state={ 
+      // firstName: 'example',
+      // lastName: '',
+      // alias: '',
+      // aliasCheckbox:0,
+      // phone1:'',
+      // phone2:'',
+      // phone3:'',
+      // email:'',
+      donthavetransport:0,
+      havetransport:0,
+      submitted: false,
+      email_comm:0,
+      help_desc:''
 };
 
 handleChange = event => {
@@ -29,9 +29,6 @@ handleChange = event => {
     this.setState({ state });
   };
   onSubmit = () => {
-    const {
-      state: { firstName, lastName,alias, aliasCheckbox, phone1, phone2, phone3,email}
-    } = this.state;
     let err = {};
 
 
