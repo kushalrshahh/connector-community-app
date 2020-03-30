@@ -40,7 +40,8 @@ $breakpoints: (
   'small': 576px,
   'medium': 769px,
   'large': 992px,
-  'xlarge': 1024px
+  'xlarge': 1024px,
+  'max': 1460px
   ) !default;
   
   /// Mixin to manage responsive breakpoints
