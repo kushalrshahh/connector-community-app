@@ -27,7 +27,7 @@ export default () => (
           <Button text="Volunteer" link="/sign-up/volunteer"/>
         </div>
         <div className="col-auto">
-          <Button text="Request Help" link="#"/>
+          <Button text="Request Help" link="/sign-up/requestor"/>
         </div>
       </div>
 
