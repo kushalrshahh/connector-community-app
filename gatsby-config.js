@@ -11,20 +11,26 @@ module.exports = {
     `gatsby-plugin-favicon`,
     `gatsby-plugin-modal-routing`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-react-svg`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-sass-resources`,
       options: {
         resources: ['./src/styles/utilities/resources.scss']
       }
     },
-    `gatsby-plugin-react-svg`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-redux`,
+      options: {
+        pathToCreateStoreModule: './src/state/create-store',
       },
     },
     // {
